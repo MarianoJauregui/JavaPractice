@@ -27,10 +27,23 @@ public class CodeWars {
         /*
         Simple, remove the spaces from the string, then return the resultant string.
          */
-
         String stringToEvaluate = "<8[ j 8   mBliB8g  imjB8B8  jl  ]B>";
         System.out.println(stringToEvaluate.replaceAll("\\s+", ""));
 
+        /*
+        Given a set of numbers, return the additive inverse of each.
+        Each positive becomes negatives, and the negatives become positives.
+         */
+        int[] arrayOne = {-1,-2,-3,-4,-5};
+        int[] arrayTwo = {-1,-2-3,4,5};
+
+        System.out.println(Arrays.toString(Arrays.stream(arrayOne).map(i -> -i).toArray()));
+
+        //A simpler solution
+        for(int i=0; i< arrayOne.length; i++){
+            arrayOne[i] *= -1;
+        }
+        // return arrayOne;
 
 
     }
