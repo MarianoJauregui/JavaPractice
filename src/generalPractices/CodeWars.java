@@ -1,6 +1,6 @@
 package generalPractices;
 
-import java.lang.reflect.Array;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -30,10 +30,8 @@ public class CodeWars {
         String stringToEvaluate = "<8[ j 8   mBliB8g  imjB8B8  jl  ]B>";
         System.out.println(stringToEvaluate.replaceAll("\\s+", ""));
 
-        /*
-        Given a set of numbers, return the additive inverse of each.
-        Each positive becomes negatives, and the negatives become positives.
-         */
+        /* Given a set of numbers, return the additive inverse of each.
+        Each positive becomes negatives, and the negatives become positives.*/
         int[] arrayOne = {-1, -2, -3, -4, -5};
         int[] arrayTwo = {-1, -2 - 3, 4, 5};
         int[] arrayThree = {10, 234, 46, 126, -54};
@@ -62,11 +60,9 @@ public class CodeWars {
         /* Check if it contains some value. */
         System.out.println(List.of(arrayThree).contains(2));
 
-        /*
-        Grade book: Complete the function so that it finds the average of the three scores
+        /* Grade book: Complete the function so that it finds the average of the three scores
          passed to it and returns the letter value associated with that grade.
-         These values are hardcoded, in codewars they are introduced with the execution of the program.
-         */
+         These values are hardcoded, in codewars they are introduced with the execution of the program. */
         int s1 = 12;
         int s2 = 68;
         int s3 = 91;
@@ -107,5 +103,21 @@ public class CodeWars {
             // return String.join(" ", array);
         }
 
+        /* Calculate the number of vowels on a String */
+        String aeiou = "aeiou";
+        int vowels = 0;
+        for(int j=0; j<aeiou.length(); j++){
+            char c = aeiou.charAt(j);
+            if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'){
+                vowels++;
+            }
+        }
+        System.out.print("Number of vowels: " + vowels);
+
+
     }
+
+
 }
+
+
