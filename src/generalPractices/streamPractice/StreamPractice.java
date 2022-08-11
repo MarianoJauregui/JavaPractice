@@ -1,8 +1,6 @@
 package generalPractices.streamPractice;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class StreamPractice {
@@ -23,12 +21,12 @@ public class StreamPractice {
         //Declarative approach using Stream API
 
         // Filter method
-        var underAge = people.stream()
+        List<Person> underAge = people.stream()
                 .filter(person -> person.getAge() < 18).toList();
         System.out.println("Filter method -> " + underAge);
 
         //Sort method
-        var sortPeople = people.stream()
+        List<Person> sortPeople = people.stream()
                 .sorted(Comparator.comparing(Person::getAge)).toList();
         sortPeople.forEach(System.out::println);
 
@@ -38,13 +36,22 @@ public class StreamPractice {
         System.out.println("All match method -> " + allMatch);
 
         //Any match method
-        var anyMatch = sortPeople.stream().anyMatch(person -> person.getAge() < 10);
+        boolean anyMatch = sortPeople.stream().anyMatch(person -> person.getAge() < 10);
         System.out.println("Any match method -> " + anyMatch);
 
         //Max method
-        var maxMethod = people.stream()
+        Optional<Person> maxMethod = people.stream()
                 .max(Comparator.comparing(Person::getAge));
         System.out.println("Max method -> " + maxMethod);
+
+        //Group method
+        Map<Integer, List<Person>> groupMethod = people.stream()
+                .collect(Collectors.groupingBy(Person::getAge));
+        groupMethod.forEach((age, people1) -> {
+            System.out.println("Sorted by age");
+            people1.forEach(System.out::println);
+            System.out.println();
+        });
 
 
 
@@ -53,9 +60,9 @@ public class StreamPractice {
     static List<Person> getPeople(){
         return List.of(
                 new Person("Mariano", "Martinez", 27),
-                new Person("Augusto", "Turco", 39),
+                new Person("Augusto", "Turco", 10),
                 new Person("José" , "Gomez", 58),
-                new Person("Sofia", "Gonzalez", 15),
+                new Person("Sofia", "Gonzalez", 27),
                 new Person("Marta", "Latapia", 98)
         );
     }
