@@ -53,6 +53,14 @@ public class StreamPractice {
             System.out.println();
         });
 
+        //Combination of methods
+        //We are trying to find the oldest Martinez on the list
+        Optional<String> oldestMartinez = people.stream()
+                .filter(person -> person.getLastName().equals("Martinez"))
+                .max(Comparator.comparing(Person::getAge))
+                .map(Person::getName);
+        oldestMartinez.ifPresent(System.out::println);
+
 
 
 
@@ -63,7 +71,7 @@ public class StreamPractice {
                 new Person("Augusto", "Turco", 10),
                 new Person("José" , "Gomez", 58),
                 new Person("Sofia", "Gonzalez", 27),
-                new Person("Marta", "Latapia", 98)
+                new Person("Marta", "Martinez", 98)
         );
     }
 }
