@@ -9,7 +9,7 @@ public class ShapeArea {
         System.out.println(solution(3));
     }
     public static int solution (int n){
-        /**
+        /*
          * n=1; 1   =   0+1;
          * n=2; 5   =   1+4;
          * n=3; 13; =   4+9;

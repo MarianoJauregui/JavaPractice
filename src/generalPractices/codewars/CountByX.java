@@ -1,6 +1,5 @@
 package generalPractices.codewars;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class CountByX {
