@@ -1,3 +1,7 @@
 # JavaPractice
 
-Codewars and HackerRank challenges
+Codewars 
+HackerRank
+LeetCode 
+CodeSignal
+
