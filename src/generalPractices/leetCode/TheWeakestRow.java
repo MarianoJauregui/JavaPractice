@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 
 public class TheWeakestRow {
+
     public static void main(String[] args) {
         int[][] matrix = {
                 {1,1,0,0,0},
