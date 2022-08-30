@@ -1,8 +1,7 @@
 package generalPractices.leetCode;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
+import java.util.PriorityQueue;
 
 public class TheWeakestRow {
 
@@ -27,24 +26,21 @@ public class TheWeakestRow {
      */
 
     public static int[] kWeakestRows(int[][] mat, int k) {
-        int[] soldierNumber = new int[k];
-        int sum = 0;
-        ArrayList arrayOne = new ArrayList<>();
-        for(int[] arr : mat){
-            for(int i : arr){
-                sum+= i;
+        PriorityQueue<int[]> priorityQueue = new PriorityQueue<>((a,b) -> a[0] != b[0] ?
+                b[0] - a[0] : b[1] - a[1]);
+        int[] res = new int[k];
+        for(int i=0; i< mat.length; i++){
+            int soldiers = 0;
+            for(int j=0; j < mat[0].length; j++){
+                if(mat[i][j] == 1) soldiers++;
+                else break;
             }
-            arrayOne.add(sum);
-            sum = 0;
+            priorityQueue.offer(new int[]{soldiers, i});
         }
-        ArrayList arrayTwo = new ArrayList<>(arrayOne);
-        Collections.sort(arrayTwo);
-
-        for(int i=0; i<k; i++){
-            soldierNumber[i] = arrayOne.indexOf(arrayTwo.get(i));
-            arrayOne.remove(soldierNumber[i]);
-            arrayOne.add(soldierNumber[i] - 1);
+        while (priorityQueue.size() > k){
+            priorityQueue.poll();
         }
-        return soldierNumber;
+        while (k > 0) res[--k] = priorityQueue.poll()[1];
+        return res;
     }
 }
