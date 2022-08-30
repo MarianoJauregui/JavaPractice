@@ -1,6 +1,7 @@
 package generalPractices.leetCode;
 
 import java.util.Arrays;
+import java.util.Objects;
 import java.util.PriorityQueue;
 
 public class TheWeakestRow {
@@ -40,7 +41,7 @@ public class TheWeakestRow {
         while (priorityQueue.size() > k){
             priorityQueue.poll();
         }
-        while (k > 0) res[--k] = priorityQueue.poll()[1];
+        while (k > 0) res[--k] = Objects.requireNonNull(priorityQueue.poll())[1];
         return res;
     }
 }
