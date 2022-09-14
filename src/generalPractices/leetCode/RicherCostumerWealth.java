@@ -16,16 +16,17 @@ public class RicherCostumerWealth {
      */
 
         public static int maximumWealth(int[][] accounts) {
-            int maxWealth = 0;
-            int cols = accounts[0].length;
-            for (int[] account : accounts) {
-                int wealth = 0;
-                for (int j = 0; j < cols; j++) {
-                    wealth += account[j];
+            int maxWealthSoFar = 0;
+
+            for (int[] customer : accounts) {
+                int currentCustomerWealth = 0;
+
+                for (int bank : customer) {
+                    currentCustomerWealth += bank;
                 }
-                maxWealth = max(maxWealth, wealth);
+                maxWealthSoFar = max(maxWealthSoFar, currentCustomerWealth);
             }
-            return maxWealth;
+            return maxWealthSoFar;
 
         }
 
