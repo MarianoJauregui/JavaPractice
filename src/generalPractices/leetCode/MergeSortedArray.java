@@ -1,9 +1,5 @@
 package generalPractices.leetCode;
 
-import java.util.Arrays;
-import java.util.Map;
-import java.util.TreeMap;
-
 public class MergeSortedArray {
 
     public static void main(String[] args) {
@@ -34,7 +30,8 @@ public class MergeSortedArray {
     The result of the merge is [1].
      */
 
-    public static void merge(int[] nums1, int m, int[] nums2, int n){ //This was hard
+    public static void merge(int[] nums1, int m, int[] nums2, int n){
+        //This was hard. Explanation here --> https://www.youtube.com/watch?v=C4oBXLr3zos
         int pointer1 = m-1;
         int pointer2 = n-1;
         int pointer3 = m+n-1;
