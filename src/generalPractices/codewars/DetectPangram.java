@@ -33,4 +33,12 @@ public class DetectPangram {
         else return false;
     }
 
+    //Easiest and faster solution
+    public static boolean checkFaster(String sentence){
+        for(char c = 'a'; c<= 'z'; c++)
+            if(!sentence.toLowerCase().contains("" + c))
+                return false;
+        return true;
+    }
+
 }
