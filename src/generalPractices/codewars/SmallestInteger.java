@@ -10,8 +10,8 @@ public class SmallestInteger {
     }
     //Given an array of integers you should find the smallest one.
     public static int findSmallestInt(int[] args){
-         return Arrays.stream(args).sorted().findFirst().getAsInt();
+        //return Arrays.stream(args).sorted().findFirst().getAsInt();
         // return IntStream.of(args).min().getAsInt();
-        // Arrays.sort(args); return args[0];
+         Arrays.sort(args); return args[0];
     }
 }
