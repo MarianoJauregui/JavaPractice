@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 
 public class Anagrams {
     public static void main(String[] args) {
-        System.out.println(isAnagram("Hello", "olleH"));
+        System.out.println(isAnagramWithHashMap("Hello", "olleH"));
     }
 
     //Easiest solution (for me)
@@ -36,17 +36,18 @@ public class Anagrams {
         return charFrequencyTest.equals(charFrequencyOriginal);
     }
 
-    private static Map<Character, Integer> stringToHashMap(String string){
+    public static Map<Character, Integer> stringToHashMap(String string) {
         Map<Character, Integer> charFrequency = new HashMap<>();
 
         char[] charArray = string.toLowerCase().toCharArray();
-        for(int i = 0; i < charArray.length; i++){
-            if(charFrequency.get(charArray[i]) == null){
+        for (int i = 0; i < charArray.length; i++) {
+            if (charFrequency.get(charArray[i]) == null) {
                 charFrequency.put(charArray[i], 1);
             } else
                 charFrequency.put(charArray[i], charFrequency.get(charArray[i]) + 1);
         }
         return charFrequency;
+    }
 
         /*
         This can be replaced with
@@ -58,6 +59,6 @@ public class Anagrams {
         }
         return charFrequency;
          */
-    }
+
 
 }
