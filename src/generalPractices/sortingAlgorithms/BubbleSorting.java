@@ -1,4 +1,4 @@
-package generalPractices.algorithms;
+package generalPractices.sortingAlgorithms;
 
 import java.util.Arrays;
 
@@ -29,7 +29,6 @@ public class BubbleSorting {
                     swapped = false;
                 }
             }
-
             //Si no ha habido intercambio en la ultima comparacion, entonces el array esta ordenado.
             if ( swapped == true) break;
         }
