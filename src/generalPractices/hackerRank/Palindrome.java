@@ -2,6 +2,7 @@ package generalPractices.hackerRank;
 
 import java.util.Scanner;
 
+//Basicamente es una palabra capicua
 public class Palindrome {
     static boolean isPalindrome(String str) {
         int i=0;
