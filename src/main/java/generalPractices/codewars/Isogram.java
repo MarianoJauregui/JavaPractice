@@ -1,4 +1,4 @@
-package main.java.generalPractices.codewars;
+package generalPractices.codewars;
 
 import java.util.Arrays;
 

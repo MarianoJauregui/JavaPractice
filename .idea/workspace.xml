@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b1cfd835-6149-4754-9c12-74e37eb5a062" name="Changes" comment="fff" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2E20n9xbZ53UHTHteng9kwjR9w8" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/solvd/IdeaProjects/JavaPractice&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.AlternateCapitalization">
+    <configuration name="AlternateCapitalization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.generalPractices.codewars.AlternateCapitalization" />
+      <module name="JavaPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.generalPractices.codewars.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayListMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.generalPractices.collectionsPractice.ArrayList.ArrayListMain" />
+      <module name="JavaPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.generalPractices.collectionsPractice.ArrayList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Fibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="generalPractices.interviews.Fibonacci" />
+      <module name="JavaPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="generalPractices.interviews.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="designPatterns.factory.Main" />
+      <module name="JavaPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="designPatterns.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringRepeat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.generalPractices.codewars.StringRepeat" />
+      <module name="JavaPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.generalPractices.codewars.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AlternateCapitalization" />
+        <item itemvalue="Application.StringRepeat" />
+        <item itemvalue="Application.ArrayListMain" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Fibonacci" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b1cfd835-6149-4754-9c12-74e37eb5a062" name="Changes" comment="" />
+      <created>1661778536015</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661778536015</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Testing MacOS">
+      <created>1661778701106</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661778701106</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Priority Queue - LeetCode">
+      <created>1661882166828</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661882166828</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Priority Queue - LeetCode">
+      <created>1661882342949</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661882342949</updated>
+    </task>
+    <task id="LOCAL-00004" summary="LinkedList - LeetCode">
+      <created>1661886446694</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661886446694</updated>
+    </task>
+    <task id="LOCAL-00005" summary="FizzBuzz - LeetCode">
+      <created>1663011346113</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663011346113</updated>
+    </task>
+    <task id="LOCAL-00006" summary="PalindromeLinkedList - LeetCode">
+      <created>1663069237866</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663069237866</updated>
+    </task>
+    <task id="LOCAL-00007" summary="RomanToInteger - LeetCode">
+      <created>1663072571037</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1663072571037</updated>
+    </task>
+    <task id="LOCAL-00008" summary="RansomNote - LeetCode">
+      <created>1663093275032</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1663093275032</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Challenges - LeetCode">
+      <created>1663177069234</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1663177069234</updated>
+    </task>
+    <task id="LOCAL-00010" summary="DuplicateZeroes - LeetCode">
+      <created>1663179819342</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1663179819342</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Merged sorted array - LeetCode">
+      <created>1663181877275</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1663181877275</updated>
+    </task>
+    <task id="LOCAL-00012" summary="RemoveElement - LeetCode">
+      <created>1663243384285</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1663243384285</updated>
+    </task>
+    <task id="LOCAL-00013" summary="RemoveDuplicates - LeetCode">
+      <created>1663249174243</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1663249174243</updated>
+    </task>
+    <task id="LOCAL-00014" summary="PalindromeNumber, TwoSum - LeetCode">
+      <created>1663261993394</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1663261993394</updated>
+    </task>
+    <task id="LOCAL-00015" summary="LongestCommonPrefix, ValidParentheses - LeetCode">
+      <created>1663266696216</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1663266696216</updated>
+    </task>
+    <task id="LOCAL-00016" summary="CodeWars ranking 7kyu">
+      <created>1663343426067</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1663343426067</updated>
+    </task>
+    <task id="LOCAL-00017" summary="CodeSignal - AlmostIncreasingSequence">
+      <created>1663586683175</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1663586683175</updated>
+    </task>
+    <task id="LOCAL-00018" summary="CodeSignal - MatrixElementSum">
+      <created>1663591888277</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1663591888277</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Codewars - Rna, Moneymoneymoney">
+      <created>1663677349486</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1663677349486</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Codewars - RegexValidatePIN">
+      <created>1663847057953</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1663847057953</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Codewars - OnesAndZeroes - 6kyu">
+      <created>1663848439151</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1663848439151</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Codewars - BouncingBalls - 6kyu">
+      <created>1663850668569</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1663850668569</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Codewars - DetectPangram - 6kyu">
+      <created>1664199017394</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1664199017394</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Codewars - DetectPangram - 6kyu">
+      <created>1664200183327</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1664200183327</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Codewars - SmileyFaceCount - 6kyu">
+      <created>1664215183859</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1664215183859</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Codewars - PileOfCubes - 6kyu">
+      <created>1664298032135</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1664298032135</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Codewars - Break camelCase - 6kyu">
+      <created>1664541769619</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1664541769619</updated>
+    </task>
+    <task id="LOCAL-00028" summary="CodeSignal - All longest Strings - 6kyu">
+      <created>1664558382677</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1664558382677</updated>
+    </task>
+    <task id="LOCAL-00029" summary="CodeWars - SmallestInteger, OppositeNumber - 8-7 kyu">
+      <created>1664988421345</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1664988421345</updated>
+    </task>
+    <task id="LOCAL-00030" summary="CodeWars - EqualSideOfArray">
+      <created>1665057730004</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1665057730004</updated>
+    </task>
+    <task id="LOCAL-00031" summary="CodeWars - Anagrams with HashMap">
+      <created>1665150423352</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1665150423352</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Practice with sorting algorithms">
+      <created>1665508442396</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1665508442396</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Practice with sorting algorithms">
+      <created>1665511002477</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1665511002477</updated>
+    </task>
+    <task id="LOCAL-00034" summary="CountPositivesSumNegatives - CodeWars">
+      <created>1665663931673</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1665663931673</updated>
+    </task>
+    <task id="LOCAL-00035" summary="NonConsecutiveNumber - CodeWars">
+      <created>1665669876466</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1665669876466</updated>
+    </task>
+    <task id="LOCAL-00036" summary="HowGoodAreYou, WolfInSheepClothing - CodeWars">
+      <created>1666027067423</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1666027067423</updated>
+    </task>
+    <task id="LOCAL-00037" summary="FindTheNextPerfectSquare, Descending order - CodeWars">
+      <created>1666112333651</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1666112333651</updated>
+    </task>
+    <task id="LOCAL-00038" summary="NthPower - CodeWars">
+      <created>1666201163217</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1666201163217</updated>
+    </task>
+    <task id="LOCAL-00039" summary="MiddleCharacter - CodeWars">
+      <created>1666280418782</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1666280418782</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Interview practice">
+      <created>1666705790983</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1666705790983</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Interview practice">
+      <created>1666721866943</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1666721866943</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Interview practice - Fibonacci">
+      <created>1666790098666</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1666790098666</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Design Patterns">
+      <created>1666806568673</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1666806568673</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Maven project">
+      <created>1667220496290</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1667220496290</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Maven project">
+      <created>1667242178358</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1667242178358</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Maven project">
+      <created>1667242192544</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1667242192544</updated>
+    </task>
+    <task id="LOCAL-00047" summary="fff">
+      <created>1667242296627</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1667242296627</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="CodeSignal - MatrixElementSum" />
+    <MESSAGE value="Codewars - Rna, Moneymoneymoney" />
+    <MESSAGE value="Codewars - RegexValidatePIN" />
+    <MESSAGE value="Codewars - OnesAndZeroes - 6kyu" />
+    <MESSAGE value="Codewars - BouncingBalls - 6kyu" />
+    <MESSAGE value="Codewars - DetectPangram - 6kyu" />
+    <MESSAGE value="Codewars - SmileyFaceCount - 6kyu" />
+    <MESSAGE value="Codewars - PileOfCubes - 6kyu" />
+    <MESSAGE value="Codewars - Break camelCase - 6kyu" />
+    <MESSAGE value="CodeSignal - All longest Strings - 6kyu" />
+    <MESSAGE value="CodeWars - SmallestInteger, OppositeNumber - 8-7 kyu" />
+    <MESSAGE value="CodeWars - EqualSideOfArray" />
+    <MESSAGE value="CodeWars - Anagrams with HashMap" />
+    <MESSAGE value="Practice with sorting algorithms" />
+    <MESSAGE value="CountPositivesSumNegatives - CodeWars" />
+    <MESSAGE value="NonConsecutiveNumber - CodeWars" />
+    <MESSAGE value="HowGoodAreYou, WolfInSheepClothing - CodeWars" />
+    <MESSAGE value="FindTheNextPerfectSquare, Descending order - CodeWars" />
+    <MESSAGE value="NthPower - CodeWars" />
+    <MESSAGE value="MiddleCharacter - CodeWars" />
+    <MESSAGE value="Interview practice" />
+    <MESSAGE value="Interview practice - Fibonacci" />
+    <MESSAGE value="Design Patterns" />
+    <MESSAGE value="Maven project" />
+    <MESSAGE value="fff" />
+    <option name="LAST_COMMIT_MESSAGE" value="fff" />
+  </component>
+</project>
