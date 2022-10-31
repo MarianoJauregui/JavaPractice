@@ -1,7 +1,7 @@
-package generalPractices.codewars;
+package main.java.generalPractices.codewars;
 
 import java.util.Arrays;
-import java.util.Locale;
+
 
 public class Isogram {
     /* An isogram is a word that has no repeating letters, consecutive or non-consecutive.
