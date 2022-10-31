@@ -1,6 +1,6 @@
-package designPatterns.factory;
+package main.java.designPatterns.factory;
 
-public class Motorcyle implements Vehicle {
+public class Motorcyle implements designPatterns.factory.Vehicle {
 
     @Override
     public void vehicleDetails(){

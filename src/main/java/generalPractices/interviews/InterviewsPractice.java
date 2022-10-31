@@ -25,7 +25,7 @@ public class InterviewsPractice {
 // Expected Output
 // {1=ad_delivery_pennies: 7000 payment_pennies: 1000, 2=ad_delivery_pennies: 1000 payment_pennies: 500, 3=payment_pennies: 500}
 
-    // Main class should be named ‘Solution’
+    // main.java.Main class should be named ‘Solution’
         public static void main(String[] args) {
             System.out.println("Hello, World");
             Map<String, Map<String, Integer>> test = new HashMap<>();

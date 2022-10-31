@@ -1,4 +1,4 @@
-package generalPractices.leetCode;
+package main.java.generalPractices.leetCode;
 
 public class BinarySearch {
     public static void main(String[] args) {

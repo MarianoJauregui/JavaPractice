@@ -1,4 +1,4 @@
-package generalPractices;
+package main.java.generalPractices;
 
 
 import java.text.NumberFormat;

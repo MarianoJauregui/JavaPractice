@@ -1,4 +1,4 @@
-package designPatterns.factory;
+package main.java.designPatterns.factory;
 
 public interface Vehicle {
 
