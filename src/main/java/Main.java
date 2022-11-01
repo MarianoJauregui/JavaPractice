@@ -32,7 +32,7 @@ public class Main {
         int average = (a+b+c)/3;
         System.out.println(average);
 
-        */
+
 
         //Sum of two binary numbers
         long b1 = scanner.nextLong();
@@ -64,7 +64,7 @@ public class Main {
         System.out.println("Decimal number -> " + Integer.parseInt(binaryNumber, 2));
 
 
-
+*/
 
         
     }
