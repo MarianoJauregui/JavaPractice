@@ -8,11 +8,6 @@ public class Main {
         //String name = scanner.next();
         //System.out.println("Hello ->" + name);
 
-        //Print the sum of two numbers
-        int a = scanner.nextInt();
-        int b = scanner.nextInt();
-        int c = scanner.nextInt();
-
         String operation = scanner.next();
 
         switch (operation) {
