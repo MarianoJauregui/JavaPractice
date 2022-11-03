@@ -1,4 +1,4 @@
-package generalPractices.codeSignal;
+package generalPractices.codeSignal.edgeOfTheOcean;
 
 public class AlmostIncreasingSequence {
     public static void main(String[] args) {

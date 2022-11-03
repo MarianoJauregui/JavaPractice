@@ -1,4 +1,4 @@
-package generalPractices.codeSignal;
+package generalPractices.codeSignal.edgeOfTheOcean;
 
 import java.util.Arrays;
 

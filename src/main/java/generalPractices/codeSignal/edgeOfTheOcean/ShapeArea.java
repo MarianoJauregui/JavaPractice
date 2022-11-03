@@ -1,4 +1,4 @@
-package generalPractices.codeSignal;
+package generalPractices.codeSignal.edgeOfTheOcean;
 
 public class ShapeArea {
     /*Below we will define an n-interesting polygon. Your task is to find the area of a polygon for a given n.

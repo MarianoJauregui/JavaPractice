@@ -1,4 +1,4 @@
-package generalPractices.codeSignal;
+package generalPractices.codeSignal.theJourneyBegins;
 
 public class CenturyFromYear {
     public static void main(String[] args) {
