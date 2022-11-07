@@ -7,10 +7,10 @@ public class FizzBuzz {
     public static void main(String[] args) {
         System.out.println(fizzBuzz(15));
         List<Integer> list = new ArrayList<>();
-        list.add(1);
-        list.add(1);
-        list.add(1);
-        list.add(1);
+        list.add(1); //index 0
+        list.add(1); //index 1
+        list.add(1); //index 2
+        list.add(1); //index 3
         list.add(4, 5);
         System.out.println(list.get(4));
 
@@ -27,9 +27,9 @@ public class FizzBuzz {
     If the value is a multiple of 3: use the value "Fizz" instead
     If the value is a multiple of 5: use the value "Buzz" instead
     If the value is a multiple of 3 & 5: use the value "FizzBuzz" instead
-    N will never be less than 1.
-*/
-                if(n % 3 == 0 && n % 5 == 0)
+    N will never be less than 1.*/
+
+                if(n % 3 == 0 && n % 5 == 0) //se puede simplificar con n % 15 == 0
                     return ("FizzBuzz");
                 else if(n % 5 == 0)
                     return ("Buzz");
