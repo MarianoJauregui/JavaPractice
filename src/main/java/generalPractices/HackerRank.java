@@ -2,6 +2,7 @@ package generalPractices;
 
 
 import java.text.NumberFormat;
+import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -18,6 +19,7 @@ public class HackerRank {
         int sum = 0;
         for (int j : arrayExample) sum += j;
         System.out.println(sum);
+        // Arrays.stream(arrayExample).sum();
 
 
         System.out.println("----------------------------------------------");
@@ -32,16 +34,6 @@ public class HackerRank {
         int n = sc.nextInt();
         System.out.println((n%2==1 || (n>=6 && n<=20)) ? "Weird"
                 : ((n>=2 && n <=5) || n>20) ? "Not Weird" : "Weird");
-
-
-        System.out.println("----------------------------------------------");
-            /*
-    In this challenge, you must read an integer, a double, and a String from stdin,
-    then print the values according to the instructions in the Output Format section below.
-            */
-        System.out.println("String: " + sc.next() +
-                '\n' + " Double: " + sc.nextDouble() +
-                '\n' + sc.nextLine() + " Int: " + sc.nextInt());
 
 
         System.out.println("----------------------------------------------");
@@ -80,28 +72,6 @@ public class HackerRank {
 
 
         System.out.println("----------------------------------------------");
-
-        /*
-        Given a double-precision number, payment,
-        denoting an amount of money, use the NumberFormat class' getCurrencyInstance method
-         to convert  into the US, Indian, Chinese, and French currency formats. Then print the formatted values as follows:
-            US: formattedPayment
-            India: formattedPayment
-            China: formattedPayment
-            France: formattedPayment
-         */
-        Scanner scanner = new Scanner(System.in);
-        double payment = scanner.nextDouble();
-
-        String us = NumberFormat.getCurrencyInstance(Locale.US).format(payment);
-        String india = NumberFormat.getCurrencyInstance(new Locale("en", "in")).format(payment);
-        String china = NumberFormat.getCurrencyInstance(Locale.CHINA).format(payment);
-        String france = NumberFormat.getCurrencyInstance(Locale.FRANCE).format(payment);
-
-        System.out.println("US: " + us);
-        System.out.println("India: " + india);
-        System.out.println("China: " + china);
-        System.out.println("France: " + france);
     }
     
 }
