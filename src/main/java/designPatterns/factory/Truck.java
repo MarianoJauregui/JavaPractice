@@ -1,4 +1,4 @@
-package main.java.designPatterns.factory;
+package designPatterns.factory;
 
 public class Truck implements Vehicle {
 
