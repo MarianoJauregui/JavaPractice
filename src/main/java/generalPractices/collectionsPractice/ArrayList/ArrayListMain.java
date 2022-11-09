@@ -1,4 +1,4 @@
-package main.java.generalPractices.collectionsPractice.ArrayList;
+package generalPractices.collectionsPractice.ArrayList;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package generalPractices.hackerRank.JavaSkillsCertificationTest;
+package generalPractices.interviews;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
