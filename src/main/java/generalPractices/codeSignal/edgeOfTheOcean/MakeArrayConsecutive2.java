@@ -10,7 +10,6 @@ public class MakeArrayConsecutive2 {
      Help him figure out the minimum number of additional statues needed. */
     /**
      * Example
-     *
      * For statues = [6, 2, 3, 8], the output should be
      * solution(statues) = 3.
      */

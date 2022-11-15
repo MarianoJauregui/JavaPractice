@@ -1,5 +1,8 @@
 package generalPractices.codeSignal.edgeOfTheOcean;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class matrixElementSum {
     public static void main(String[] args) {
         int[][] twoDimArray = { {0,1,1,2},
@@ -8,7 +11,7 @@ public class matrixElementSum {
 
         System.out.println(solution(twoDimArray));
     }
-    /*¨
+    /*
     After becoming famous, the CodeBots decided to move into a new building together. Each of the rooms has a different cost,
     and some of them are free, but there's a rumour that all the free rooms are haunted! Since the CodeBots are quite superstitious,
     they refuse to stay in any of the free rooms, or any of the rooms below any of the free rooms.
@@ -20,7 +23,9 @@ public class matrixElementSum {
         int sum = 0;
         //We start iterating from left to right to check first if there is a 0.
         for(int leftToRight = 0; leftToRight < matrix[0].length; leftToRight++){
+
             for(int upToDown = 0; upToDown < matrix.length; upToDown++){
+
                 if(matrix[upToDown][leftToRight] == 0){
                     break;
                 }
@@ -28,5 +33,26 @@ public class matrixElementSum {
             }
         }
         return sum;
+    }
+
+    public static int solutionMat(int[][] matrix){
+
+        List<Integer> cancelColumns = new ArrayList<>();
+        int totalPrice = 0;
+
+        for(int i=0; i<matrix.length; i++){
+
+            for(int j=0; j<matrix[i].length; j++){
+
+                if(cancelColumns.contains(j)) continue;
+
+                if(matrix[i][j] == 0) {
+                    cancelColumns.add(j);
+                } else{
+                    totalPrice += matrix[i][j];
+                }
+            }
+        }
+        return totalPrice;
     }
 }
