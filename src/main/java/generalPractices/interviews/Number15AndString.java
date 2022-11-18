@@ -16,8 +16,8 @@ public class Number15AndString {
 
         char[] chars = String.valueOf(number).toCharArray();
 
-        for (int i = 0; i < chars.length; i++) {
-            str.append(chars[i]).append("+");
+        for (char aChar : chars) {
+            str.append(aChar).append("+");
         }
 
         return str.substring(0, str.length() -1);

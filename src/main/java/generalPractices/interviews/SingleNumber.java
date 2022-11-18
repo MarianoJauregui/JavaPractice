@@ -2,7 +2,6 @@ package generalPractices.interviews;
 
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Given a non-empty array of integers, every element appears twice except one.

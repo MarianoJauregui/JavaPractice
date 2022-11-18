@@ -6,13 +6,6 @@ import java.util.List;
 public class FizzBuzz {
     public static void main(String[] args) {
         System.out.println(fizzBuzz(15));
-        List<Integer> list = new ArrayList<>();
-        list.add(1); //index 0
-        list.add(1); //index 1
-        list.add(1); //index 2
-        list.add(1); //index 3
-        list.add(4, 5);
-        System.out.println(list.get(4));
 
         for (int i = 1; i <= 15; i++) {
             System.out.print(fizzBuzzString(i) + " - ");
@@ -50,7 +43,7 @@ public class FizzBuzz {
     */
         List<String> stringList = new ArrayList<>();
 
-        for(int i=1; i<=n; i++){ //esto arranca en i = 1 porque los list arrancan el size en 1, no en 0
+        for(int i=0; i<n; i++){
             if(i % 3 == 0 && i % 5 == 0)
                 stringList.add("FizzBuzz");
             else if (i % 3 == 0)
