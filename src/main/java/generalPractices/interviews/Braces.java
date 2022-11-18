@@ -3,15 +3,25 @@ package generalPractices.interviews;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Scanner;
+import java.util.Stack;
 
+/* Given a list of string of bracket characters: {}(), the string of brackets is balanced under the following conditions:
+1) It is the empty string
+2) If string a and b are balanced, then ab is balanced
+3) If string a is balanced, then (a) and {a} are balanced.
+Write a class that determines whether the brackets in each string are balanced and returns true if the string is balanced,
+or false if it is not.
+ */
 public class Braces {
-    /* Given a list of string of bracket characters: {}(), the string of brackets is balanced under the following conditions:
-   1) It is the empty string
-   2) If string a and b are balanced, then ab is balanced
-   3) If string a is balanced, then (a) and {a} are balanced.
-   Write a class that determines whether the brackets in each string are balanced and returns true if the string is balanced,
-   or false if it is not.
-     */
+   public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String expression = scanner.next();
+
+        if(isBalanced(expression)) System.out.println("Balanced");
+        else System.out.println("Not balanced");
+
+       System.out.println("Is it balanced? " + isBalancedStack("()()"));
+    }
     static boolean isBalanced(String s) {
         Deque<Character> stack = new ArrayDeque<>();
 
@@ -21,7 +31,6 @@ public class Braces {
                 stack.push(x);
                 continue;
             }
-
             char check;
             switch (x) {
                 case ')' -> {
@@ -44,11 +53,23 @@ public class Braces {
         return (stack.isEmpty());
     }
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String expression = scanner.next();
-
-        if(isBalanced(expression)) System.out.println("Balanced");
-        else System.out.println("Not balanced");
+    public static boolean isBalancedStack(String str){
+        Stack<String> stack = new Stack<>();
+        int i = 0;
+        while(i < str.length()){
+            if(str.charAt(i) == '('){
+                stack.push("(");
+            }
+            else if(str.charAt(i) == ')'){
+                if(!stack.isEmpty()){
+                    stack.pop();
+                } else stack.push(")");
+                break;
+            }
+            i++;
+        }
+        return stack.isEmpty();
     }
+
+
 }

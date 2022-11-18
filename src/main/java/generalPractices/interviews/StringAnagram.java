@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class StringAnagram {
     public static void main(String[] args){
-        isAnagram("BCA", "ABC");
+        isAnagram("BC a a A  1   2", "bcaaa12");
     }
 
     public static void isAnagram(String wordOne, String wordTwo){
