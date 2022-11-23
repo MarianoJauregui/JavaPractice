@@ -25,7 +25,7 @@ public class Braces {
     static boolean isBalanced(String s) {
         Deque<Character> stack = new ArrayDeque<>();
 
-        for(int i=0; i <s.length(); i++){
+        for(int i=0; i < s.length(); i++){
             char x = s.charAt(i);
             if(x == '(' || x == '[' || x == '{'){
                 stack.push(x);

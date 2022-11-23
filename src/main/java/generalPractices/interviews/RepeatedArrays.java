@@ -1,7 +1,6 @@
 package generalPractices.interviews;
 
 
-import java.util.Arrays;
 import java.util.Stack;
 
 /**
@@ -21,6 +20,8 @@ public class RepeatedArrays {
     public static void main(String[] args) {
         String str = "3[a]4[b]";
         System.out.println(returnArray(str));
+
+        System.out.println(solution("3[a]4[b]"));
     }
 
     public static String returnArray(String input) {
@@ -56,6 +57,26 @@ public class RepeatedArrays {
             }
         }
         return res;
+    }
+
+    static String solution(String word) {
+        StringBuilder answer = new StringBuilder(word);
+
+        while(answer.toString().contains("[")) {
+
+            int openBracket = answer.lastIndexOf("[");
+            int closeBracket = answer.indexOf("]", openBracket);
+
+            String bracket = answer.substring(openBracket + 1, closeBracket);
+
+            int repetitions = Integer.parseInt(String.valueOf(answer.charAt(openBracket - 1)));
+
+            String replacedPart = bracket.repeat(repetitions);
+
+            answer.delete(openBracket - 1, closeBracket + 1);
+            answer.insert(openBracket - 1, replacedPart);
+        }
+        return answer.toString();
     }
 }
 

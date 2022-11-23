@@ -10,7 +10,7 @@ public class Factorial {
         int i = 1;
         do{
             product *= i;
-            System.out.print(product + " ");
+            System.out.print(product + " " );
             i++;
         } while (i <= num);
     }

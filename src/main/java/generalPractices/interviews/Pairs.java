@@ -16,11 +16,11 @@ public class Pairs {
     public static List<Integer> pairs(int[] arr){
         List<Integer> integers = new ArrayList<>();
 
-        for(int i = 0; i < arr.length; i++){
-            for(int j=0; j < arr.length; j++){
-                if(arr[i] == arr[j]) continue;
-                integers.add(arr[i]);
-                integers.add(arr[j]);
+        for (int i : arr) {
+            for (int j : arr) {
+                if (i == j) continue;
+                integers.add(i);
+                integers.add(j);
             }
         }
         return integers;
