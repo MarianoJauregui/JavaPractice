@@ -18,10 +18,12 @@ import java.util.Stack;
  */
 public class RepeatedArrays {
     public static void main(String[] args) {
-        String str = "3[a]4[b]";
+        String str = "3[a2[b]]";
         System.out.println(returnArray(str));
 
-        System.out.println(solution("3[a]4[b]"));
+        System.out.println(solution(str));
+
+        System.out.println(repeatedArrayLeaSolution(str));
     }
 
     public static String returnArray(String input) {
@@ -78,5 +80,26 @@ public class RepeatedArrays {
         }
         return answer.toString();
     }
+
+    public static String repeatedArrayLeaSolution(String inputString){
+        int startIndex, endIndex, multiplier;
+
+        while (inputString.contains("[")){
+
+            startIndex = inputString.lastIndexOf("[");
+            endIndex = inputString.indexOf("]", startIndex);
+            multiplier = Character.getNumericValue(inputString.charAt(startIndex - 1));
+
+            String multipliedString = inputString.substring(startIndex + 1, endIndex);
+            //System.out.println(multipliedString);
+            inputString = inputString.replace
+                    (inputString.substring(startIndex - 1, endIndex + 1),
+                            multipliedString.repeat(multiplier));
+
+            //System.out.println(inputString);
+        }
+        return inputString;
+    }
+
 }
 

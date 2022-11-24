@@ -1,8 +1,6 @@
 package generalPractices.codeSignal.interviewPractice.arrays;
 
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
 
 /**
  * Given a string s consisting of small English letters, find and return the first instance of a non-repeating character in it.
@@ -34,6 +32,7 @@ public class FirstNonRepeatingCharacter {
     static char solutionWithHashMap(String str){
         //TIME COMPLEXITY 0(n)
         HashMap<Character, Integer> hashMap = new HashMap<>();
+
         for (int i = 0; i < str.length(); i++) {
             char c = str.charAt(i);
             if(hashMap.containsKey(c)){
@@ -42,11 +41,13 @@ public class FirstNonRepeatingCharacter {
                 hashMap.put(c, 1);
             }
         }
+
         for(int i=0; i < str.length(); i++){
             char c = str.charAt(i);
             if(hashMap.get(c) == 1)
                 return c;
         }
+
         return '_';
 
     }

@@ -14,11 +14,12 @@ import java.util.HashSet;
  */
 public class FirstDuplicate {
     public static void main(String[] args) {
-        int[] arr = {2,4,3,5,1};
+        int[] arr = {2,1,3,5,2};
         System.out.println(solutionWithHashSet(arr));
     }
 
     static int solution(int[] arr){
+        //BRUTE FORCE SOLUTION
         //TIME COMPLEXITY: 0(n2)
         int minSecondIndex = arr.length;
 
@@ -35,6 +36,7 @@ public class FirstDuplicate {
 
     static int solutionWithHashSet(int[] arr){
         HashSet<Integer> ints = new HashSet<>();
+
         for(int i : arr){
             if(ints.contains(i)){
                 return i;
