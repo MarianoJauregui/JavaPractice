@@ -11,6 +11,8 @@ public class FindTheOddInt {
     public static void main(String[] args) {
         int[] arr = {1,1,2};
         System.out.println(findIt(arr));
+
+        System.out.println("Same solution but with XOR operator : " + findIt_USINGXOR(arr));
     }
     public static int findIt(int[] arr){
         HashMap<Integer, Integer> map = new HashMap<>();
@@ -26,6 +28,13 @@ public class FindTheOddInt {
             if(map.get(num) % 2 != 0)
                 return num;
         }  return 0;
+    }
 
+    public static int findIt_USINGXOR(int[] arr){
+        int xor = 0;
+        for (int j : arr) {
+            xor ^= j;
+        }
+        return xor;
     }
 }
