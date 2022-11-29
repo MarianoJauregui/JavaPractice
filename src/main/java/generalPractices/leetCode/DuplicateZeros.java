@@ -1,4 +1,4 @@
-package main.java.generalPractices.leetCode;
+package generalPractices.leetCode;
 
 import java.util.Arrays;
 import java.util.LinkedList;
