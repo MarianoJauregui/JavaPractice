@@ -13,9 +13,11 @@ public class AreTheyTheSame {
     public static void main(String[] args) {
         //These two would be valid arrays. So we would return true.
         int[] validArr1 = {121, 144, 19, 161, 19, 144, 19, 11};
-        int[] validArr2 = {121, 14641, 20736, 36, 25921, 361, 20736, 361};
+        int[] validArr2 = {121, 14641, 20736, 361, 25921, 361, 20736, 361};
 
         System.out.println(comp(validArr1, validArr2));
+
+        System.out.println(comp2(validArr1,validArr2));
     }
 
     public static boolean comp(int[] a, int[] b) {
@@ -33,12 +35,12 @@ public class AreTheyTheSame {
     }
 
     public static boolean comp2(int[] a, int[] b) { // NOT OPTIMAL
-        if ((a == null) || (b == null)) return false;
+        if ((a == null) || (b == null) || (a.length != b.length)) return false;
 
-        int[] ab = Arrays.stream(a).map(n -> n * n).toArray();
-        Arrays.sort(ab);
+        Arrays.stream(a).map(n -> n * n);
+        Arrays.sort(a);
         Arrays.sort(b);
-        return (Arrays.equals(ab, b));
+        return (Arrays.equals(a, b));
 
     }
 }
