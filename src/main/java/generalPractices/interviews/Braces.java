@@ -1,8 +1,6 @@
 package generalPractices.interviews;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
-import java.util.Scanner;
+
 import java.util.Stack;
 
 /* Given a list of string of bracket characters: {}(), the string of brackets is balanced under the following conditions:
@@ -14,16 +12,11 @@ or false if it is not.
  */
 public class Braces {
    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String expression = scanner.next();
-
-        if(isBalanced(expression)) System.out.println("Balanced");
-        else System.out.println("Not balanced");
-
-       System.out.println("Is it balanced? " + isBalancedStack("()()"));
+       System.out.println("Is it balanced? " + isBalanced("([])"));
+       System.out.println(isBalancedStack("(((())))"));
     }
     static boolean isBalanced(String s) {
-        Deque<Character> stack = new ArrayDeque<>();
+        Stack<Character> stack = new Stack<>();
 
         for(int i=0; i < s.length(); i++){
             char x = s.charAt(i);
@@ -31,6 +24,7 @@ public class Braces {
                 stack.push(x);
                 continue;
             }
+
             char check;
             switch (x) {
                 case ')' -> {
