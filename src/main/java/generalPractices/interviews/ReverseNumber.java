@@ -2,7 +2,7 @@ package generalPractices.interviews;
 
 public class ReverseNumber {
     public static void main(String[] args){
-        System.out.println(reverseNumber(12));
+        System.out.println(reverseNumber(1234));
 
     }
 

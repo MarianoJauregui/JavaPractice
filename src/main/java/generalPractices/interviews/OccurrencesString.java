@@ -24,7 +24,7 @@ public class OccurrencesString {
         }
 
         for(Map.Entry entry : map.entrySet()){
-            System.out.println(entry.getKey() + " " + entry.getValue());
+            System.out.println("Letter: " + entry.getKey() + " number of times: " + entry.getValue());
         }
     }
 }

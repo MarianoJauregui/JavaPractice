@@ -19,47 +19,12 @@ import java.util.Stack;
 public class RepeatedArrays {
     public static void main(String[] args) {
         String str = "3[a2[b]]";
-        System.out.println(returnArray(str));
 
         System.out.println(solution(str));
 
         System.out.println(repeatedArrayLeaSolution(str));
     }
 
-    public static String returnArray(String input) {
-        String res = "";
-
-        Stack<Integer> countStack = new Stack<>();
-        Stack<String> resStack = new Stack<>();
-
-        int ch = 0;
-
-        while (ch < input.length()) {
-            if (Character.isDigit(input.charAt(ch))) {
-                int count = 0;
-                while (Character.isDigit(input.charAt(ch))) {
-                    count = 10 * count + (input.charAt(ch) - '0');
-                    ch++;
-                }
-                countStack.push(count);
-            } else if (input.charAt(ch) == '[') {
-                resStack.push(res);
-                res = "";
-                ch++;
-            } else if (input.charAt(ch) == ']') {
-                StringBuilder temp = new StringBuilder(resStack.pop());
-                int repeatTimes = countStack.pop();
-                for (int i = 0; i < repeatTimes; i++) {
-                    temp.append(res);
-                }
-                res = temp.toString();
-                ch++;
-            } else {
-                res += input.charAt(ch++);
-            }
-        }
-        return res;
-    }
 
     static String solution(String word) {
         StringBuilder answer = new StringBuilder(word);

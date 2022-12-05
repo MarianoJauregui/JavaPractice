@@ -3,7 +3,7 @@ package generalPractices.leetCode;
 
 public class LongestCommonPrefix {
     public static void main(String[] args) {
-        String arr[] = {"dog","racecar","car"};
+        String[] arr = {"flower","flowe","flight"};
         System.out.println(longestCommonPrefix(arr));
     }
     /*
