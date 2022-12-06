@@ -2,7 +2,7 @@ package generalPractices.interviews;
 
 public class Palindrome {
     public static void main(String[] args){
-        System.out.println(isPalindrome("Neuquen"));
+        System.out.println(isPalindrome("NeuquEN"));
     }
     public static boolean isPalindrome(String word){
         int i = 0;

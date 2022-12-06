@@ -38,7 +38,8 @@ public class CheckIfNAndItsDoubleExist {
                 return true;
             } else{
                 hashSet.add(num*2);
-                if(num % 2 == 0) hashSet.add(num/2);
+                if(num % 2 == 0)
+                    hashSet.add(num/2);
             }
         }
         return false;

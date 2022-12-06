@@ -2,10 +2,7 @@ package generalPractices.interviews;
 
 
 /**
- * * if you have number 15 make 1+5 as output
- *
- *
- * * String asdfGGkjcl, split it on the doubled symbol and print length of both strings
+ * *
  */
 public class Number15AndString {
     public static void main(String[] args) {
@@ -13,6 +10,7 @@ public class Number15AndString {
         splitString("asdfGGksfgthjcl");
     }
     public static String intAsNumber(int number){
+        //if you have number 15 make 1+5 as output
         StringBuilder str = new StringBuilder();
 
         char[] chars = String.valueOf(number).toCharArray();
@@ -26,6 +24,8 @@ public class Number15AndString {
     }
 
     public static void splitString(String str){
+        //String asdfGGkjcl, split it on the doubled symbol and print length of both strings
+
             String[] out = str.split("(\\w)\\1+");
             int firstLength = 0;
             int secondLength = 0;

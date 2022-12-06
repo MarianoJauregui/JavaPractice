@@ -13,7 +13,7 @@ public class RotateImage {
     }
 
     public static int[][] rotate(int[][] matrix){
-
+        // Could not solve this problem. I had to look for the solution.
         int n = matrix.length;
         for(int i = 0; i < n / 2; i++){
             for(int j = i; j < n-i-1; j++){
