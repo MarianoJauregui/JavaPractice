@@ -10,9 +10,11 @@ public class ReverseNumber {
         int reversed = 0;
 
         while(number != 0){
+            //get last digit
             int digit = number % 10;
             reversed = reversed * 10 + digit;
 
+            //remove last digit
             number /= 10;
         }
 

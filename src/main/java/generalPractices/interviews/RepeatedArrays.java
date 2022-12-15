@@ -1,8 +1,6 @@
 package generalPractices.interviews;
 
 
-import java.util.Stack;
-
 /**
  * Given this input: “3[asdf]” you have to generate an output string: asdfasdfasdf
  * # Q1
@@ -18,11 +16,9 @@ import java.util.Stack;
  */
 public class RepeatedArrays {
     public static void main(String[] args) {
-        String str = "3[a2[b]]";
+        String str = "4[a2[b]]";
 
         System.out.println(solution(str));
-
-        System.out.println(repeatedArrayLeaSolution(str));
     }
 
 
@@ -45,6 +41,32 @@ public class RepeatedArrays {
         }
         return answer.toString();
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     public static String repeatedArrayLeaSolution(String inputString){
         int startIndex, endIndex, multiplier;

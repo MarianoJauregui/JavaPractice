@@ -14,10 +14,9 @@ public class Isogram {
     }
 
     public static boolean  isIsogram(String str) {
-        String newString = str.toLowerCase();
-        char[] ch = newString.toCharArray();
+        char[] ch = str.toLowerCase().toCharArray();
         Arrays.sort(ch);
-        for(int i=0; i<newString.length() -1; i++){
+        for(int i=0; i<str.length() -1; i++){
             if (ch[i] == ch[i+1])
                 return false;
         }

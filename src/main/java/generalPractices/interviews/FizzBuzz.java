@@ -5,11 +5,21 @@ import java.util.List;
 
 public class FizzBuzz {
     public static void main(String[] args) {
-        System.out.println("List: " + fizzBuzz(15));
-
-        for (int i = 1; i <= 15; i++) {
-            System.out.print(fizzBuzzString(i) + " - ");
+        int[] arr = new int[100];
+        //We fill the array
+        for(int i=1; i<100; i++){
+            arr[i] = i;
         }
+        fizzBuzzProblem(arr);
+
+        //System.out.println("List: " + fizzBuzz(15));
+
+        //for (int i = 1; i <= 15; i++) {
+        //    System.out.print(fizzBuzzString(i) + " - ");
+       // }
+
+
+
     }
 
 
@@ -43,13 +53,27 @@ public class FizzBuzz {
 
         for(int i=1; i<=n; i++){
             if(i % 3 == 0 && i % 5 == 0)
-                stringList.add("FizzBuzz");
+                stringList.add(" FizzBuzz - ");
             else if (i % 3 == 0)
-                stringList.add("Fizz");
+                stringList.add(" Fizz - ");
             else if(i % 5 == 0)
-                stringList.add("Buzz");
+                stringList.add(" Buzz - ");
             else stringList.add(String.valueOf(i));
         }
         return stringList;
+    }
+
+    static void fizzBuzzProblem(int[] arr){
+
+
+        for(int num : arr){
+            if(num % 3 == 0 && num % 5 == 0){
+                System.out.println("FizzBuzz");
+            } else if(num % 3 == 0 ){
+                System.out.println("Fizz");
+            } else if(num % 5 == 0){
+                System.out.println("Buzz");
+            }else System.out.println(num);
+        }
     }
 }

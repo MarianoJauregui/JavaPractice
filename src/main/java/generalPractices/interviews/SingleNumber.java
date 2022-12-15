@@ -11,14 +11,14 @@ import java.util.HashMap;
 public class SingleNumber {
     public static void main(String[] args) {
         int[] arr = {2,2,1,1,3,3,5,7,7};
-        System.out.println(singleNumber(arr));
+        System.out.println(singleNumberXOR(arr));
         System.out.println(singleNumber2(arr));
         System.out.println(0^2^1^1^1^3^3^3^4^4);
     }
 
 
 
-    public static int singleNumber(int[] arr){
+    public static int singleNumberXOR(int[] arr){
         int ans = arr[0];
         for (int i = 1; i < arr.length; i++) {
             ans = ans ^ arr[i];
