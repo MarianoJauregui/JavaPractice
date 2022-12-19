@@ -32,6 +32,10 @@ public class NumericAnagrams {
             }
         }
 
+        for(Map.Entry entry2 : mapped.entrySet()){
+            System.out.println("Keys: " + entry2.getKey() + " - Values: " + entry2.getValue());
+        }
+
     for(Map.Entry<String,String> entry : mapped.entrySet()){
 
         System.out.print(entry.getValue());

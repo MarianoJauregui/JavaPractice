@@ -10,7 +10,7 @@ public class Isogram {
 
     public static void main(String[] args) {
         System.out.println(isIsogram("Dermatoglyphics"));
-        System.out.println(isIsogramEasierSolution("Dermatoglyphics"));
+        System.out.println(isIsogramEasierSolution("kasjdfhu"));
     }
 
     public static boolean  isIsogram(String str) {

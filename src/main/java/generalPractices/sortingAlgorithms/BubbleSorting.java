@@ -9,6 +9,7 @@ public class BubbleSorting {
     }
 
     public static int[] bubbleSort(int[] array){
+
         int size = array.length;
 
         //Ejecutamos el bucle dos veces, uno para recorrer el array, y el otro para comparaciones

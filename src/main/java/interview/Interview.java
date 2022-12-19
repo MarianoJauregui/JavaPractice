@@ -22,6 +22,7 @@ public class Interview {
     }
 
     public static void uniqueWords(String str){
+        str = str.replace(" ", "");
         char[] chars = str.toCharArray();
         HashMap<Character, Integer> map = new HashMap<>();
 
