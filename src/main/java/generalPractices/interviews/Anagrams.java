@@ -1,4 +1,4 @@
-package generalPractices.codewars.kyu8;
+package generalPractices.interviews;
 
     /* Complete the function to return true if the two arguments given are anagrams of each other;
     return false otherwise.
@@ -47,17 +47,4 @@ public class Anagrams {
         }
         return charFrequency;
     }
-
-        /*
-        This can be replaced with
-         Map<Character, Integer> charFrequency = new HashMap<>();
-
-        char[] charArray = string.toLowerCase().toCharArray();
-        for (char c : charArray) {
-            charFrequency.merge(c, 1, Integer::sum);
-        }
-        return charFrequency;
-         */
-
-
 }
