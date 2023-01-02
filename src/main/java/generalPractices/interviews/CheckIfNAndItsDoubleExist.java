@@ -33,7 +33,8 @@ public class CheckIfNAndItsDoubleExist {
 
     public static boolean checkIfExist_HashSet(int[] arr){
         HashSet<Integer> hashSet = new HashSet<>();
-        for(int num : arr){
+
+        for(int num : arr){ //10,2,5,3
             if(hashSet.contains(num)){
                 return true;
             } else{
@@ -42,6 +43,8 @@ public class CheckIfNAndItsDoubleExist {
                     hashSet.add(num/2);
             }
         }
+
+
         return false;
     }
 }
