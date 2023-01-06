@@ -13,6 +13,8 @@ import java.util.Map;
 public class Anagrams {
     public static void main(String[] args) {
         System.out.println(isAnagramWithHashMap("Hello", "olleH"));
+
+        System.out.println(MJAnagram("Hello", "olleH"));
     }
 
     //Easiest solution (for me)
@@ -39,12 +41,38 @@ public class Anagrams {
         Map<Character, Integer> charFrequency = new HashMap<>();
 
         char[] charArray = string.toLowerCase().toCharArray();
-        for (int i = 0; i < charArray.length; i++) {
-            if (charFrequency.get(charArray[i]) == null) {
-                charFrequency.put(charArray[i], 1);
+        for (char ch : charArray) {
+            if (charFrequency.get(ch) == null) {
+                charFrequency.put(ch, 1);
             } else
-                charFrequency.put(charArray[i], charFrequency.get(charArray[i]) + 1);
+                charFrequency.put(ch, charFrequency.get(ch) + 1);
         }
         return charFrequency;
+    }
+
+    static boolean MJAnagram(String test, String original){
+        HashMap<Character, Integer> map1 = new HashMap<>();
+        HashMap<Character, Integer> map2 = new HashMap<>();
+
+        char[] chars1 = test.toLowerCase().toCharArray();
+        char[] chars2 = test.toLowerCase().toCharArray();
+
+        for(char ch : chars1) {
+            if(map1.containsKey(ch)){
+                map1.put(ch, map1.get(ch) +1);
+            } else {
+                map1.put(ch, 1);
+            }
+        }
+
+        for(char ch : chars2) {
+            if(map2.containsKey(ch)){
+                map2.put(ch, map2.get(ch) +1);
+            } else {
+                map2.put(ch, 1);
+            }
+        }
+
+        return map1.equals(map2);
     }
 }
