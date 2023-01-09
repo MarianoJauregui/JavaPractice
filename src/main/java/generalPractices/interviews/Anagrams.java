@@ -17,6 +17,32 @@ public class Anagrams {
         System.out.println(MJAnagram("Hello", "olleH"));
     }
 
+    static boolean MJAnagram(String test, String original){
+        HashMap<Character, Integer> map1 = new HashMap<>();
+        HashMap<Character, Integer> map2 = new HashMap<>();
+
+        char[] chars1 = test.toLowerCase().toCharArray();
+        char[] chars2 = test.toLowerCase().toCharArray();
+
+        for(char ch : chars1) {
+            if(map1.containsKey(ch)){
+                map1.put(ch, map1.get(ch) +1);
+            } else {
+                map1.put(ch, 1);
+            }
+        }
+
+        for(char ch : chars2) {
+            if(map2.containsKey(ch)){
+                map2.put(ch, map2.get(ch) +1);
+            } else {
+                map2.put(ch, 1);
+            }
+        }
+
+        return map1.equals(map2);
+    }
+
     //Easiest solution (for me)
     public static boolean isAnagram(String test, String original) {
         if(test == null || original == null || test.length() != original.length())
@@ -50,29 +76,5 @@ public class Anagrams {
         return charFrequency;
     }
 
-    static boolean MJAnagram(String test, String original){
-        HashMap<Character, Integer> map1 = new HashMap<>();
-        HashMap<Character, Integer> map2 = new HashMap<>();
 
-        char[] chars1 = test.toLowerCase().toCharArray();
-        char[] chars2 = test.toLowerCase().toCharArray();
-
-        for(char ch : chars1) {
-            if(map1.containsKey(ch)){
-                map1.put(ch, map1.get(ch) +1);
-            } else {
-                map1.put(ch, 1);
-            }
-        }
-
-        for(char ch : chars2) {
-            if(map2.containsKey(ch)){
-                map2.put(ch, map2.get(ch) +1);
-            } else {
-                map2.put(ch, 1);
-            }
-        }
-
-        return map1.equals(map2);
-    }
 }

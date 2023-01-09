@@ -19,18 +19,6 @@ public class CheckIfNAndItsDoubleExist {
         System.out.println(checkIfExist_HashSet(arr));
     }
 
-    public static boolean checkIfExist(int[] arr){
-        //LINEAR SEARCH
-        for(int i = 0; i < arr.length; i++){
-            for(int j = i+1; j < arr.length; j++){
-                if(arr[i] == 2 * arr[j] || arr[i] == arr[j] * 0.5){
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
-
     public static boolean checkIfExist_HashSet(int[] arr){
         HashSet<Integer> hashSet = new HashSet<>();
 
@@ -43,8 +31,22 @@ public class CheckIfNAndItsDoubleExist {
                     hashSet.add(num/2);
             }
         }
-
-
         return false;
     }
+
+
+
+    public static boolean checkIfExist(int[] arr){
+        //LINEAR SEARCH
+        for(int i = 0; i < arr.length; i++){
+            for(int j = i+1; j < arr.length; j++){
+                if(arr[i] == 2 * arr[j] || arr[i] == arr[j] * 0.5){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+
 }
