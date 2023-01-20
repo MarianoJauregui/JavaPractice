@@ -1,5 +1,6 @@
 package generalPractices.interviews;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -10,9 +11,12 @@ import java.util.Map;
 //  * 4556 - has no anagrams
 public class NumericAnagrams {
     public static void main(String[] args){
+        String line = "231 546 123 456 231 312 4556 7689";
 
 
-    String line = "231 546 123 456 231 312 4556 7689";
+
+
+
     String [] split = line.split(" ");
 
     Map<String,String> mapped = new HashMap<>();
@@ -48,6 +52,7 @@ public class NumericAnagrams {
         }
 
     }
+
 
 }
 

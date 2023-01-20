@@ -1,4 +1,4 @@
-package generalPractices.interviews;
+package interview;
 
 public class InverseRepeatArray {
     public static void main(String[] args){

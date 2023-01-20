@@ -14,9 +14,10 @@ output: 1, 2, aaa, 4, bbb, aaa..
 public class Andrey {
     public static void main(String[] args){
         int[] ints = IntStream.range(1,101).toArray();
-
         int[] ints2 = new int[100];
         Arrays.setAll(ints2, i -> i+1);
+
+
 
         printArray(ints);
 

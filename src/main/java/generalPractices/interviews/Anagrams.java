@@ -14,10 +14,10 @@ public class Anagrams {
     public static void main(String[] args) {
         System.out.println(isAnagramWithHashMap("Hello", "olleH"));
 
-        System.out.println(MJAnagram("Hello", "olleH"));
+            System.out.println(MJAnagram("Hello", "olleH"));
     }
 
-    static boolean MJAnagram(String test, String original){
+    static boolean MJAnagram(String test, String original){ //TIME COMPLEXITY: O(n)
         HashMap<Character, Integer> map1 = new HashMap<>();
         HashMap<Character, Integer> map2 = new HashMap<>();
 
@@ -45,6 +45,8 @@ public class Anagrams {
 
     //Easiest solution (for me)
     public static boolean isAnagram(String test, String original) {
+        //TIME COMPLEXITY O(n log n)
+        //El método Arrays.sort es de O(log n)
         if(test == null || original == null || test.length() != original.length())
             return false;
         char[] ch1 = test.toLowerCase().toCharArray();
