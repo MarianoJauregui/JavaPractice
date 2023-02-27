@@ -8,5 +8,3 @@
 
 #CodeSignal
 
-#LeetCode
-
